@@ -1,0 +1,18 @@
+function triangle(){
+var sides=parseint(document.getElementsById('number').value);
+if(sideX===sideY && sideY===sideZ && sideZ===sideX){
+alert("equilateral");
+}
+else if(sideX!=sideY && sideY===sideZ && sideZ!=sideX){
+alert("isosceles");
+}
+else if(sideX===sideY && sideY!=sideZ && sideZ!=sideX){
+alert("isosceles");
+}
+else if(sideX!=sideY && sideY!=sideZ && sideZ!=sideX){
+alert("scalene");
+}
+else{
+alert("not a triangle");
+}
+  }
