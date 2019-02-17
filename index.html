@@ -8,8 +8,17 @@
 <body style="background-color:powderblue;">
 
 <h1 style="text-align:center;"><b>TRIANGLE TRACKER</b></h1>
-<p><label><b>enter three numbers to check the type of triangle it forms</b></label>
-  <input type ="numbers" id = "number"><br>
-  <input type ="submit"  value = "OK" ></p>
+<form onsubmit="triangle()">
+<strong><label for="sideX">sideX:</label></strong>
+  <input id="sideX" type="number"value=""><br>
+<strong><label for="sideY">sideY:</label></strong>
+    <input id="sideY" type="number"value=""><br>
+<strong><label for="sideZ">sideZ:</label></strong>
+      <input id="sideZ" type="number"value=""><br>
+<input type="submit" value="ok">
+</form>
+<div id="mytriangle"  img class"mytriangle" src="triangle"/>
+</div>
+
 </body>
 </html>
