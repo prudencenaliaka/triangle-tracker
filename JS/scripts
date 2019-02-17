@@ -2,20 +2,19 @@ var triangle=function(){
 var sideX=parseint(document.getElementsByid("sideX").value);
 sideY=parseint(document.getElementsByid("sideY").value);
 sideZ=parseint(document.getElementsByid("sideZ").value);
-if(sideX+sideY>sideZ && sideY+sideZ>sideX && sideX+sideZ>sideY) {
- if(sideX===sideY && sideY===sideZ && sideZ===sideX){
-alert("equilateral");
+if(isTriangle(sideX,sideY,sideZ)){return triangleType(sideX,sideY,sideZ)
+}else{ return alert("not a triangle");} }
+var triangleType=function(sideX,sideY,sideZ){
+ if((sideX===sideY) && (sideY===sideZ) && (sideZ===sideX)){
+return alert("equilateral");
 }
- else if(sideX!=sideY && sideY===sideZ && sideZ!=sideX){
+ else if((sideX!=sideY) && (sideY===sideZ) &&  (sideZ!=sideX)){
+return alert("isosceles");
+}
+ else if((sideX===sideY) && (sideY!=sideZ) && (sideZ!=sideX)){
 alert("isosceles");
 }
- else if(sideX===sideY && sideY!=sideZ && sideZ!=sideX){
-alert("isosceles");
-}
- else if(sideX!=sideY && sideY!=sideZ && sideZ!=sideX){
-alert("scalene");
-}
-}else{
-alert("not a triangle");
-}
-  }
+else{
+return alert("scalene");
+} }
+var isTriangle=function(sideX,sideY,sideZ){return(sideX<=(sideY+sideZ)&&(sideY<=(sideZ+sideX)&&(sidez<=(sideX+sideY))));}
