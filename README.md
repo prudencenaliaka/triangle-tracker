@@ -17,5 +17,12 @@ CSS
 JAVASCRIPT
 ## contact details
 my contact is 0705518699 or 0795651064 incase need arises you can reach me via that.
+## BDD
+specifications
+ when all sides are equal output is equilateral
+ when two of the sides are equal output is isosceles
+ when all the three sides are not equal output is scalene
+ when two of the sides are less than or equal to the third side the output is not a triangle
+we input values then evaluate them to get results
 ### License
 copyright (c) (2019) GPL licence
